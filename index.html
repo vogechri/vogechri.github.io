@@ -18,7 +18,8 @@
     .links { text-align: center; }
     .photo { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: #e8eef5;
              display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #6a7f96; }
-    .pub { display: grid; grid-template-columns: 120px 1fr; gap: 20px; padding: 14px 0; }
+    .pub { display: grid; grid-template-columns: 170px 1fr; gap: 22px; padding: 14px 0; align-items: center; }
+    .thumb { width: 170px; max-height: 130px; object-fit: contain; border-radius: 6px; }
     .venue-tag { height: 76px; border-radius: 8px; background: #eef3f9; color: #234; font-weight: 700;
                  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 0.95rem; }
     .venue-tag span { font-weight: 400; font-size: 0.85rem; color: #566; }
@@ -29,6 +30,7 @@
       .intro { grid-template-columns: 1fr; }
       .photo { margin: 0 auto; }
       .pub { grid-template-columns: 1fr; gap: 6px; }
+      .thumb { width: 100%; max-height: 200px; }
       .venue-tag { height: auto; flex-direction: row; gap: 6px; padding: 4px 10px; justify-content: flex-start; }
     }
   </style>
@@ -63,7 +65,7 @@
 
   <h2>Publications</h2>
       <div class="pub">
-        <div class="venue-tag">arXiv<span>2026</span></div>
+        <img class="thumb" src="images/imloc.jpg" alt="ImLoc: Revisiting Visual Localization with Image-based Representation" loading="lazy">
         <div>
           <a class="title" href="https://arxiv.org/abs/2601.04185">ImLoc: Revisiting Visual Localization with Image-based Representation</a><br>
           Xudong Jiang, Fangjinhua Wang, Silvano Galliani, <strong>Christoph Vogel</strong>, Marc Pollefeys<br>
@@ -72,7 +74,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2025</span></div>
+        <img class="thumb" src="images/rscore.jpg" alt="R-SCoRe: Revisiting Scene Coordinate Regression for Robust Large-Scale Visual Localization" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2025/html/Jiang_R-SCoRe_Revisiting_Scene_Coordinate_Regression_for_Robust_Large-Scale_Visual_Localization_CVPR_2025_paper.html">R-SCoRe: Revisiting Scene Coordinate Regression for Robust Large-Scale Visual Localization</a><br>
           Xudong Jiang, Fangjinhua Wang, Silvano Galliani, <strong>Christoph Vogel</strong>, Marc Pollefeys<br>
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2024</span></div>
+        <img class="thumb" src="images/glace.jpg" alt="GLACE: Global Local Accelerated Coordinate Encoding" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2024/html/Wang_GLACE_Global_Local_Accelerated_Coordinate_Encoding_CVPR_2024_paper.html">GLACE: Global Local Accelerated Coordinate Encoding</a><br>
           Fangjinhua Wang*, Xudong Jiang*, Silvano Galliani, <strong>Christoph Vogel</strong>, Marc Pollefeys<br>
@@ -90,7 +92,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2024</span></div>
+        <img class="thumb" src="images/f3loc.jpg" alt="F3Loc: Fusion and Filtering for Floorplan Localization" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2024/html/Chen_F3Loc_Fusion_and_Filtering_for_Floorplan_Localization_CVPR_2024_paper.html">F3Loc: Fusion and Filtering for Floorplan Localization</a><br>
           Changan Chen, Rui Wang, <strong>Christoph Vogel</strong>, Marc Pollefeys<br>
@@ -99,7 +101,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2022</span></div>
+        <img class="thumb" src="images/itermvs.jpg" alt="IterMVS: Iterative Probability Estimation for Efficient Multi-View Stereo" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_IterMVS_Iterative_Probability_Estimation_for_Efficient_Multi-View_Stereo_CVPR_2022_paper.pdf">IterMVS: Iterative Probability Estimation for Efficient Multi-View Stereo</a><br>
           Fangjinhua Wang, Silvano Galliani, <strong>Christoph Vogel</strong>, Marc Pollefeys<br>
@@ -108,7 +110,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2021</span></div>
+        <img class="thumb" src="images/patchmatchnet.jpg" alt="PatchmatchNet: Learned Multi-View Patchmatch Stereo" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_PatchmatchNet_Learned_Multi-View_Patchmatch_Stereo_CVPR_2021_paper.pdf">PatchmatchNet: Learned Multi-View Patchmatch Stereo</a><br>
           Fangjinhua Wang, Silvano Galliani, <strong>Christoph Vogel</strong>, Pablo Speciale, Marc Pollefeys<br>
@@ -117,7 +119,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2021</span></div>
+        <img class="thumb" src="images/deepvideomvs.jpg" alt="DeepVideoMVS: Multi-View Stereo on Video with Recurrent Spatio-Temporal Fusion" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content/CVPR2021/html/Duzceker_DeepVideoMVS_Multi-View_Stereo_on_Video_With_Recurrent_Spatio-Temporal_Fusion_CVPR_2021_paper.html">DeepVideoMVS: Multi-View Stereo on Video with Recurrent Spatio-Temporal Fusion</a><br>
           Arda Düzçeker, Silvano Galliani, <strong>Christoph Vogel</strong>, Pablo Speciale, Mihai Dusmanu, Marc Pollefeys<br>
@@ -135,7 +137,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">ACCV<span>2018</span></div>
+        <img class="thumb" src="images/inpainting.jpg" alt="Learning Energy Based Inpainting for Optical Flow" loading="lazy">
         <div>
           <a class="title" href="https://arxiv.org/abs/1811.03721">Learning Energy Based Inpainting for Optical Flow</a><br>
           <strong>Christoph Vogel</strong>, Patrick Knöbelreiter, Thomas Pock<br>
@@ -144,7 +146,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">IGARSS<span>2018</span></div>
+        <img class="thumb" src="images/aerial.jpg" alt="Self-Supervised Learning for Stereo Reconstruction on Aerial Images" loading="lazy">
         <div>
           <a class="title" href="https://arxiv.org/abs/1907.12446">Self-Supervised Learning for Stereo Reconstruction on Aerial Images</a><br>
           Patrick Knöbelreiter, <strong>Christoph Vogel</strong>, Thomas Pock<br>
@@ -162,7 +164,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">ICCV<span>2017</span></div>
+        <img class="thumb" src="images/stokes.jpg" alt="Volumetric Flow Estimation for Incompressible Fluids using the Stationary Stokes Equations" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Lasinger_Volumetric_Flow_Estimation_ICCV_2017_paper.pdf">Volumetric Flow Estimation for Incompressible Fluids using the Stationary Stokes Equations</a><br>
           Katrin Lasinger, <strong>Christoph Vogel</strong>, Konrad Schindler<br>
@@ -171,7 +173,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">BMVC<span>2017</span></div>
+        <img class="thumb" src="images/fem.jpg" alt="Semantic 3D Reconstruction with Finite Element Bases" loading="lazy">
         <div>
           <a class="title" href="https://www.bmva-archive.org.uk/bmvc/2017/papers/paper098/index.html">Semantic 3D Reconstruction with Finite Element Bases</a><br>
           Audrey Richard, <strong>Christoph Vogel</strong>, Maros Blaha, Thomas Pock, Konrad Schindler<br>
@@ -198,7 +200,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">CVPR<span>2016</span></div>
+        <img class="thumb" src="images/semantic3d.jpg" alt="Large-Scale Semantic 3D Reconstruction: An Adaptive Multi-Resolution Model for Multi-Class Volumetric Labeling" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/Blaha_Large-Scale_Semantic_3D_CVPR_2016_paper.pdf">Large-Scale Semantic 3D Reconstruction: An Adaptive Multi-Resolution Model for Multi-Class Volumetric Labeling</a><br>
           Maros Blaha, <strong>Christoph Vogel</strong>, Audrey Richard, Jan Dirk Wegner, Thomas Pock, Konrad Schindler<br>
@@ -207,7 +209,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">DGPF<span>2016</span></div>
+        <img class="thumb" src="images/dgpf.jpg" alt="Towards Integrated 3D Reconstruction and Semantic Interpretation of Urban Scenes" loading="lazy">
         <div>
           <a class="title" href="https://www.dgpf.de/src/tagung/jt2016/proceedings/papers/05_DLT2016_Blaha_et_al.pdf">Towards Integrated 3D Reconstruction and Semantic Interpretation of Urban Scenes</a><br>
           Maros Blaha, <strong>Christoph Vogel</strong>, Audrey Richard, Jan Dirk Wegner, Thomas Pock, Konrad Schindler<br>
@@ -216,7 +218,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">IJCV<span>2015</span></div>
+        <img class="thumb" src="images/prsf.jpg" alt="3D Scene Flow Estimation with a Piecewise Rigid Scene Model" loading="lazy">
         <div>
           <a class="title" href="https://doi.org/10.1007/s11263-015-0806-0">3D Scene Flow Estimation with a Piecewise Rigid Scene Model</a><br>
           <strong>Christoph Vogel</strong>, Konrad Schindler, Stefan Roth<br>
@@ -225,7 +227,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">ECCV<span>2014</span></div>
+        <img class="thumb" src="images/eccv14.jpg" alt="View-Consistent 3D Scene Flow Estimation over Multiple Frames" loading="lazy">
         <div>
           <a class="title" href="https://doi.org/10.1007/978-3-319-10593-2_18">View-Consistent 3D Scene Flow Estimation over Multiple Frames</a><br>
           <strong>Christoph Vogel</strong>, Stefan Roth, Konrad Schindler<br>
@@ -234,7 +236,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">ICCV<span>2013</span></div>
+        <img class="thumb" src="images/prsf.jpg" alt="Piecewise Rigid Scene Flow" loading="lazy">
         <div>
           <a class="title" href="https://openaccess.thecvf.com/content_iccv_2013/papers/Vogel_Piecewise_Rigid_Scene_2013_ICCV_paper.pdf">Piecewise Rigid Scene Flow</a><br>
           <strong>Christoph Vogel</strong>, Konrad Schindler, Stefan Roth<br>
@@ -252,7 +254,7 @@
         </div>
       </div>
       <div class="pub">
-        <div class="venue-tag">ISPRS Annals<span>2012</span></div>
+        <img class="thumb" src="images/glacier.jpg" alt="Optical Flow for Glacier Motion Estimation" loading="lazy">
         <div>
           <a class="title" href="https://doi.org/10.5194/isprsannals-i-3-359-2012">Optical Flow for Glacier Motion Estimation</a><br>
           <strong>Christoph Vogel</strong>, Andreas Bauder, Konrad Schindler<br>

@@ -18,4 +18,6 @@ Static, single-file homepage (`index.html`), no build step.
 
 ## Editing
 - Publications are plain HTML blocks inside `index.html`; copy an existing `<div class="pub">` block to add one.
+- Paper thumbnails live in `images/` (cropped from each paper's first figure); reference them with
+  `<img class="thumb" src="images/<name>.jpg" alt="...">` in place of a `venue-tag` div.
 - To add a photo: save it as `images/photo.jpg` and follow the comment next to the `CV` placeholder.
