@@ -16,8 +16,10 @@
     .intro { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: center; }
     .intro p { margin: 0 0 12px; }
     .links { text-align: center; }
-    .photo { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: #e8eef5;
-             display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #6a7f96; }
+    .photo { position: relative; width: 200px; height: 200px; border-radius: 50%; overflow: hidden; }
+    .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.4s ease; }
+    .photo .alt { opacity: 0; }
+    .photo:hover .alt { opacity: 1; }
     .pub { display: grid; grid-template-columns: 170px 1fr; gap: 22px; padding: 14px 0; align-items: center; }
     .thumb { width: 170px; max-height: 130px; object-fit: contain; border-radius: 6px; }
     .venue-tag { height: 76px; border-radius: 8px; background: #eef3f9; color: #234; font-weight: 700;
@@ -59,9 +61,10 @@
         <a href="https://www.microsoft.com/en-us/research/people/chvogel/">Microsoft Research</a>
       </p>
     </div>
-    <!-- To add a photo: put it at images/photo.jpg and replace this div with
-         <img class="photo" src="images/photo.jpg" alt="Christoph Vogel"> -->
-    <div class="photo" aria-hidden="true">CV</div>
+    <div class="photo">
+      <img src="images/photo.jpg" alt="Christoph Vogel">
+      <img class="alt" src="images/photo_hover.jpg" alt="" aria-hidden="true">
+    </div>
   </div>
 
   <h2>Publications</h2>
